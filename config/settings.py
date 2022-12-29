@@ -38,7 +38,9 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'User.apps.UserConfig', # new
-    'SCP.apps.ScpConfig', # new
+    'Customer.apps.CustomerConfig', # new
+    'Store.apps.StoreConfig', # new
+    'Workshop.apps.WorkshopConfig', # new
 ]
 
 AUTH_USER_MODEL = 'User.User' # new
