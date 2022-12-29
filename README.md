@@ -24,7 +24,7 @@
 </p>
 - Talal Al-Rehili
 <p align="left">
-<a href="https://www.linkedin.com/in//" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Talal Al-Rehili" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/talal-alrehili-1a8999238/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="Talal Al-Rehili" height="30" width="40" /></a>
 </p>
 - Mohammed Al-Motairi
 <p align="left">
