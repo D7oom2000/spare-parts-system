@@ -113,6 +113,13 @@ AUTH_PASSWORD_VALIDATORS = [
 ]
 
 
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+    'SCP.backend.CustomerBackend',
+    'SCP.backend.WorkshopBackend',
+    'SCP.backend.StoreBackend',
+]
+
 # Internationalization
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 

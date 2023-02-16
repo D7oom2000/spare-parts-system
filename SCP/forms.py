@@ -1,8 +1,8 @@
 from django.forms import ModelForm
 from django import forms
-from django.contrib.auth.forms import UserCreationForm, UserChangeForm
+from django.contrib.auth.forms import UserCreationForm, UserChangeForm, AuthenticationForm
 from User.models import Customer, Store, Workshop
-from .models import Parts, Part_Image
+from .models import Parts, Part_Image, DabrhaRequest, dabrha_offers
 
 class CustomUserCreationForm(UserCreationForm):
     class Meta:
@@ -24,6 +24,11 @@ class WorkshopUserCreationForm(UserCreationForm):
     class Meta:
         model = Workshop 
         fields = ['email', 'username', 'password1', 'password2']
+
+class WorkshopLogin(AuthenticationForm):
+    username = forms.CharField(widget=forms.TextInput(attrs={'placeholder': 'Username'}))
+    password = forms.CharField(widget=forms.PasswordInput(attrs={'placeholder': 'Password'}))
+
 
 
 
@@ -48,5 +53,27 @@ class AddserviceForm(forms.Form):
 class LoginForm(forms.Form):
     username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput())
+
+
+class DabrhaRequestForm(ModelForm):
+    class Meta:
+        model = DabrhaRequest
+        fields = [
+        'customer',
+        'part_no', 
+        'P_name', 
+        'car_manu', 
+        'car_name', 
+        'manufacture_year',
+        'original',
+        'desc',
+        'img'
+        ]
+
+class DabrhaRequestFormForStores(ModelForm):
+    class Meta:
+        model= dabrha_offers
+        fields = '__all__'
+
 
  

@@ -16,6 +16,7 @@
     <link rel="stylesheet" type="text/css" href= "{% static 'css/vendor/vendor.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/plugins/plugins.min.css' %}">
     <link rel="stylesheet" type="text/css" href="{% static 'css/style.min.css' %}"> 
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" />
 
 
 
@@ -112,7 +113,7 @@
 
                                                 <!-- Mega Menu Sub Link -->
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Other Pages</a>
+                                                    <a href="#" class="mega-menu-item-title"> Pages</a>
                                                     <ul class="mega-menu-sub">
                                                         <li><a href="cart.html">Cart</a></li>
                                                         <li><a href="wishlist.html">Wishlist</a></li>
@@ -130,20 +131,15 @@
                                                 <li class="mega-menu-item">
                                                     <a href="#" class="mega-menu-item-title">Become A Partner?</a>
                                                     <ul class="mega-menu-sub">
-                                                        <li><a href="{% url 'scp:registerStore' %}">for Spare Parts Stores</a></li>
-                                                        <li><a href="{% url 'scp:workshop-home'%}">for Workshops</a></li>
+                                                        <li><a href="{% url 'scp:store-login' %}">for Spare Parts Stores</a></li>
+                                                        <li><a href="{% url 'scp:ws-login'%}">for Workshops</a></li>
                                                     </ul>
                                                 </li>
                                                 <!-- Mega Menu Sub Link -->
                                                 <li class="mega-menu-item">
-                                                    <a href="#" class="mega-menu-item-title">Product Types</a>
+                                                    <a href="#" class="mega-menu-item-title">Other Services</a>
                                                     <ul class="mega-menu-sub">
-                                                        <li><a href="product-details-tab-left.html">Product Tab Left</a></li>
-                                                        <li><a href="product-details-tab-right.html">Product Tab Right</a></li>
-                                                        <li><a href="product-details-gallery-left.html">Product Gallery Left</a></li>
-                                                        <li><a href="product-details-gallery-right.html">Product Gallery Right</a></li>
-                                                        <li><a href="product-details-sticky-left.html">Product Sticky Left</a></li>
-                                                        <li><a href="product-details-sticky-right.html">Product Sticky right</a></li>
+                                                        <li><a href="{% url 'scp:dabrha' %}">Product Sticky right</a></li>
                                                     </ul>
                                                 </li>
                                             </ul>
@@ -288,6 +284,7 @@
 
 <!-- Main JS -->
 <script src="{% static 'js/main.js'%}"></script>
+
 
 </body>
 
